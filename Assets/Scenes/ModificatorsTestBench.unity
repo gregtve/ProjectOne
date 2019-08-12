@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -624,16 +624,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 795f76ad8f3d31c4fb94dba5fd40b3da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentStats:
-    HP: 100
-    Damage: 50
-    Defence: 25
-    BuildTime: 15
-    AttackDelay: 1
-    MoveSpeed: 10
+  _baseStats:
+    OwnerId: 0
+    HP: 0
+    Damage: 0
+    Defence: 0
+    BuildTime: 0
+    AttackDelay: 0
+    MoveSpeed: 0
+    AttackRange: 0
     Cost:
     - Resource: 0
       Amount: 100
+    ProduceDelay: 0
+    ProdusedResource:
+    - Resource: 1
+      Amount: 20
+  CurrentStats:
+    OwnerId: 0
+    HP: 0
+    Damage: 0
+    Defence: 0
+    BuildTime: 0
+    AttackDelay: 0
+    MoveSpeed: 0
+    AttackRange: 0
+    Cost: []
+    ProduceDelay: 0
+    ProdusedResource: []
 --- !u!4 &1240747846
 Transform:
   m_ObjectHideFlags: 0

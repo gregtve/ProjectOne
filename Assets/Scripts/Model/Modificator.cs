@@ -1,4 +1,4 @@
-﻿public class Modificator : BaseSceneObject, IModificator
+﻿public class Modificator : IModificator
 {
 	public Stats ApplyModificator(Stats stats)
 	{
